@@ -1,0 +1,69 @@
+
+.jumbotron {
+    padding-top:10px !important;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    width: 80%;
+    height:75%;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 10px #5a5b5b;
+    vertical-align: middle;
+}
+
+
+
+#get_weather_button, #input_div {
+    width:50%;
+    display: inline-block;
+}
+
+#buttonDiv {
+    text-align: center;
+    margin: auto;
+}
+
+#mainText {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: -15%;
+    padding-top: 30;
+}
+h1,#store_title {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1rem;
+}
+
+#divh1 {
+    padding-top: -20px;
+    font-size: 5.0em;
+    text-align: center;
+}
+
+body {
+    background-size: cover;
+    text-align: center;
+}
+a {
+    color: black;
+}
+#cboxDiv {
+    text-align: center;
+}
+
+h1,#admin_title h2,#admin_title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+}
+body {
+    background-color:#90C3D4 !important;
+
+}
