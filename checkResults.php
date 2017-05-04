@@ -14,7 +14,9 @@ $dbConn = getDBConnection();
 $productType = $_GET['itemType'];
 $productName = $_GET['itemName'];
 
-if($_GET['itemPrice'] == true && $_GET['itemName'] != "" && $_GET['itemType'] != ""){
+if($_GET['itemName'] != "" && $_GET['itemType'] == ""){
+    $sql = " SELECT productName, productDescription, productPrice FROM product WHERE (productName LIKE '%$productName%') ORDER BY productPrice";
+} elseif($_GET['itemPrice'] == true && $_GET['itemName'] != "" && $_GET['itemType'] != ""){
     $sql = " SELECT productName, productDescription, productPrice FROM product WHERE (productName LIKE '%$productName%' AND typeId = $productType) ORDER BY productPrice";
 } elseif($_GET['itemPrice'] == false && $_GET['itemName'] != "" && $_GET['itemType'] != ""){
     $sql = " SELECT productName, productDescription, productPrice FROM product WHERE (productName LIKE '%$productName%' AND typeId = $productType)";
