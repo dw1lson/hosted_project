@@ -7,7 +7,7 @@ if(!isset($_SESSION['username'])){
 
 include './dbconn.php';
 include 'includes/phpFunctions.php';
-$dbConn = getDBConnection("heroku_f1e413901d54873");
+$dbConn = getDBConnection();
 
 function addItem() {  //admin has submitted the "update user" form
     global $dbConn;

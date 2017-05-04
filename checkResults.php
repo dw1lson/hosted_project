@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 session_start();
 include './dbconn.php';
 
-$dbConn = getDBConnection("heroku_f1e413901d54873");
+$dbConn = getDBConnection();
 
 // $np = array();
 // if($_GET['itemName'] != ""){

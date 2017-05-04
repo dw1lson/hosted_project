@@ -3,7 +3,7 @@ session_start();
 
 include './dbconn.php';
 
-$conn = getDBConnection("heroku_f1e413901d54873");
+$conn = getDBConnection();
 function getItemTotals($id){
     global $conn;
    

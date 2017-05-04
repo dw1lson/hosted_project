@@ -4,6 +4,7 @@ function getDBConnection($dbname) {
     $host = "us-cdbr-iron-east-03.cleardb.net";
     $username = "b8a6552837f05e";
     $password = "e5c84054";
+    $dbname = "heroku_f1e413901d54873";
     
     try {
         //Creating database connection

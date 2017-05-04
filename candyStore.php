@@ -4,7 +4,7 @@ include './dbconn.php';
 include 'includes/phpFunctions.php';
 
 //$dbConn = getDBConnection("candy_store");
-$dbConn = getDBConnection("heroku_f1e413901d54873");
+$dbConn = getDBConnection();
 
 ?>
 <!DOCTYPE html>

@@ -2,7 +2,7 @@
 session_start();
 include './dbconn.php';
 
-$conn = getDBConnection("heroku_f1e413901d54873");
+$conn = getDBConnection();
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);   //hash("sha1",$_POST['password']);

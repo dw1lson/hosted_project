@@ -8,7 +8,7 @@ if (!isset($_SESSION["username"])) {  //Check whether the admin has logged in
 
 include './dbconn.php';
 
-$dbConn = getDBConnection("cheroku_f1e413901d54873");
+$dbConn = getDBConnection();
 
 function getAllItems() {
     global $dbConn;
