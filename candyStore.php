@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../common/dbconn.php';
+//include '../common/dbconn.php';
 include 'includes/phpFunctions.php';
 
 $dbConn = getDBConnection("candy_store");
