@@ -1,9 +1,9 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 session_start();
-include '../common/dbconn.php';
+include './dbconn.php';
 
-$dbConn = getDBConnection("candy_store");
+$dbConn = getDBConnection("heroku_f1e413901d54873");
 
 // $np = array();
 // if($_GET['itemName'] != ""){

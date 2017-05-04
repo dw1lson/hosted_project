@@ -5,9 +5,9 @@ if(!isset($_SESSION['username'])){
     header("Location: candyStore.php");
 }
 
-include '../common/dbconn.php';
+include './dbconn.php';
 include 'includes/phpFunctions.php';
-$dbConn = getDBConnection("candy_store");
+$dbConn = getDBConnection("heroku_f1e413901d54873");
 
 function addItem() {  //admin has submitted the "update user" form
     global $dbConn;

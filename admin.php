@@ -3,12 +3,12 @@ session_start();
 
 if (!isset($_SESSION["username"])) {  //Check whether the admin has logged in
     session_destroy();
-    header("Location: candyStore.html"); 
+    header("Location: candyStore.php"); 
 }
 
-include '../common/dbconn.php';
+include './dbconn.php';
 
-$dbConn = getDBConnection("candy_store");
+$dbConn = getDBConnection("cheroku_f1e413901d54873");
 
 function getAllItems() {
     global $dbConn;

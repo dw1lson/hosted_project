@@ -5,9 +5,9 @@ if (!isset($_SESSION["username"])) {  //Check whether the admin has logged in
     header("Location: candyStore.php"); 
 }
 
-include '../common/dbconn.php';
+include './dbconn.php';
 
-$dbConn = getDBConnection("candy_store");
+$dbConn = getDBConnection("heroku_f1e413901d54873");
 
 $sql = "DELETE FROM product
         WHERE productId = " .$_GET['itemId'];

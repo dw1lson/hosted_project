@@ -1,8 +1,8 @@
 <?php
 session_start();
-include '../common/dbconn.php';
+include './dbconn.php';
 
-$conn = getDBConnection("candy_store");
+$conn = getDBConnection("heroku_f1e413901d54873");
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);   //hash("sha1",$_POST['password']);

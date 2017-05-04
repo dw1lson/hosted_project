@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-include '../common/dbconn.php';
+include './dbconn.php';
 
-$conn = getDBConnection("candy_store");
+$conn = getDBConnection("heroku_f1e413901d54873");
 function getCosts($id){
     global $conn;
    

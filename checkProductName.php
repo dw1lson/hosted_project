@@ -1,8 +1,8 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 session_start();
-include '../common/dbconn.php';
-$dbConn = getDBConnection("candy_store");
+include './dbconn.php';
+$dbConn = getDBConnection("heroku_f1e413901d54873");
 
 $productId = $_GET['itemId'];
 
