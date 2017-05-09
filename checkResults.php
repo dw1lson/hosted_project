@@ -24,6 +24,8 @@ if($_GET['itemName'] != "" && $_GET['itemType'] == ""){
     $sql = " SELECT productName, productDescription, productPrice FROM product WHERE typeId = $productType";
 } elseif($_GET['itemPrice'] == true && $_GET['itemName'] == "" && $_GET['itemType'] != "") {
     $sql = " SELECT productName, productDescription, productPrice FROM product WHERE typeId = $productType ORDER BY productPrice";
+} elseif($_GET['itemPrice'] == true && $_GET['itemName'] == "" && $_GET['itemType'] == "") {
+    $sql = " SELECT productName, productDescription, productPrice FROM product ORDER BY productPrice";
 } else {
     $sql = " SELECT productName, productDescription, productPrice FROM product";
 }
